@@ -28,4 +28,4 @@ const postNewNotionItemsToSlack: Handler = async () => {
 };
 
 // see https://crontab.guru for more info on how this syntax works
-export const handler = schedule('* * * * 1', postNewNotionItemsToSlack);
+export const handler = schedule('0 12 * * 1', postNewNotionItemsToSlack);
